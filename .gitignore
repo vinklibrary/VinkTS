@@ -1,0 +1,5 @@
+/build/*
+/dist/*
+/VinkTS.egg-info
+.pypirc
+.idea/*
