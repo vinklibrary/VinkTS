@@ -3,3 +3,4 @@
 /VinkTS.egg-info
 .pypirc
 .idea/*
+src/data/datasets/datasets/*

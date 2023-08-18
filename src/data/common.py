@@ -1,19 +1,16 @@
 from . import Dataset, DataEntry, DataBatch
 
-import pandas
+import pandas as pd
 
-#  data:pandas.DataFrame
-#  start
-#
-
-
-class TsDataset(Dataset):
-    super().__init__()
+class TsDataset():
     def __init__(self,
-                 data : pandas.DataFrame,
-                 target_col : str,
-                 ts_col : str
+                 data: pd.DataFrame = None,
+                 target_col: str = None,
+                 ts_col: str = None
                  ):
         self.data = data
         self.target_col = target_col
         self.ts_col = ts_col
+
+    def __len__(self):
+        return len(self.data)
